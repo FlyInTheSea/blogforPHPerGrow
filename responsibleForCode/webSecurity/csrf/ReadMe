@@ -1,5 +1,7 @@
 there are two directories named attacked.com and unkonwn.com represented two sites;
 in order to illustrate , admin's message are stored in the file named adminList in stead of stored in mysql;
 
-
-
+first do login in attacked.com/login.php 
+then open unkown.com/mail.html 
+you will find the content of attacked.com/useradded changed which means an account had been generated ;
+end;
