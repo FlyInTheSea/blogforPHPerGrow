@@ -1,1 +1,1 @@
-line
+select * from admin where name = "admin1 ";show databases;--  " 
