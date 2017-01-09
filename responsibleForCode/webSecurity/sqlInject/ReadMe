@@ -1,1 +1,17 @@
-select * from admin where name = "admin1 ";show databases;--  " 
+attack is skillful while defend is easy.
+
+The way to defend from sqlInject has been declared in "http://www.phptherightway.com/#pdo_extension"
+
+More importantly, PDO allows you to safely inject foreign input (e.g. IDs) into your SQL queries 
+without worrying about database SQL injection attacks. 
+This is possible using PDO statements and bound parameters.
+
+
+
+
+
+
+
+
+
+
