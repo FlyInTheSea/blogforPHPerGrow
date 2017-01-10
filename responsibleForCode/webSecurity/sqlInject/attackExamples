@@ -11,3 +11,7 @@ for sql2: $id = "1 union select 1,1,1";
 
 for sql3 $id = "id=-1 union select char(97),char(97),char(97)";
 //let injection still useful without 
+
+
+more examples in
+https://phpdelusions.net/sql_injection
