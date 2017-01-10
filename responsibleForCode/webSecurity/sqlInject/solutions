@@ -10,6 +10,11 @@ This is possible using PDO statements and bound parameters.
 
 
 
+I think there is another solution;
+if the param is int then use intval($param);
+if the param is string then use addslashes($param) or like this
+$param = bin2hex($param);
+$sql = "select * from admin where name = UNHEX(0x".$param .")";
 
 
 
