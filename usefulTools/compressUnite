@@ -1,0 +1,8 @@
+#auto detected file format then  compress(default .zip) or  uncompress it 
+
+if -b params isn't passed then do decompression
+
+
+
+
+
