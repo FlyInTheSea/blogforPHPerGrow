@@ -1,0 +1,29 @@
+
+I went to an interview yesterday ;
+There was a question that asked you to recursively delete files in given directory ;
+Of course you can solve the question in the way that offered in http://php.net/manual/en/function.rmdir.php#110489
+
+There is another way offered in http://php.net/manual/en/function.rmdir.php#118821
+
+I seldom use the second way before .
+I think i should chang my mind 
+
+If you let me design a system maybe IM for example ,
+i will make everything ok except the function of remote control.
+because i can't implement it ;
+
+
+
+
+Another example , if a phper don't familiar with hadoop then how can you accomplish the function of tags system ;
+
+
+more tools , more way;
+
+
+
+
+
+
+
+
