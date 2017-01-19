@@ -1,23 +1,15 @@
 #!/bin/bash
 
-### BEGIN INIT INFO
-# Provides:         keymap
-# Required-Start:    $all
-# Required-Stop:     $all
-# Default-Start:     2 3 4 5
-# Default-Stop:      0 1 6
-# Short-Description: change default key map
-# Description:    
-### END INIT INFO
-
+xmodmap -e "remove control = Control_L"
 #remove caps
 xmodmap -e "remove lock = Caps_Lock"
 
+
+xmodmap -e "keycode 37=Caps_Lock"
 #change caps to control
 xmodmap -e "keycode 66 = Control_R Control_R "
 
 
-xmodmap -e "add control = Control_R"
 
 xmodmap -e "keycode 49 = Escape"
 
@@ -30,8 +22,16 @@ xmodmap -e "keycode 22 = backslash bar"
 xmodmap -e "keycode 51=BackSpace"
 
 xmodmap -e "keycode 62 = F5"
+
+
+
+
+xmodmap -e "add control = Control_R"
+xmodmap -e "add lock = Caps_Lock"
+
+
 #keyTweak in windows
 
-xmodmap -e "remove control = Control_L"
-xmodmap -e "keycode 37=Caps_Lock"
-xmodmap -e "add lock = Caps_Lock"
+
+#you can't put this file under /etc/init.d because xmodmap works under X windows 
+#you should use "startup applications" and delay 2s to start 
