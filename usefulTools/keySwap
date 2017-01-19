@@ -14,10 +14,10 @@
 xmodmap -e "remove lock = Caps_Lock"
 
 #change caps to control
-xmodmap -e "keycode 66 = Control_L Control_L "
+xmodmap -e "keycode 66 = Control_R Control_R "
 
 
-xmodmap -e "add control = Control_L"
+xmodmap -e "add control = Control_R"
 
 xmodmap -e "keycode 49 = Escape"
 
@@ -31,3 +31,7 @@ xmodmap -e "keycode 51=BackSpace"
 
 xmodmap -e "keycode 62 = F5"
 #keyTweak in windows
+
+xmodmap -e "remove control = Control_L"
+xmodmap -e "keycode 37=Caps_Lock"
+xmodmap -e "add lock = Caps_Lock"
