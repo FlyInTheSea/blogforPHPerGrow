@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=/tool/keymap
+X-GNOME-Autostart-enabled=false
+NoDisplay=false
+Hidden=false
+Name[en_US]=keymap
+Comment[en_US]=
+X-GNOME-Autostart-Delay=3
