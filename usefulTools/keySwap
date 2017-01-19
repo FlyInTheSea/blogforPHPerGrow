@@ -34,4 +34,19 @@ xmodmap -e "add lock = Caps_Lock"
 
 
 #you can't put this file under /etc/init.d because xmodmap works under X windows 
-#you should use "startup applications" and delay 2s to start 
+#you should use "startup applications" and delay 2s to start  
+#or edit /home/$your_home/.config/autostart/keymap.desktop 
+#content  begin
+
+#[Desktop Entry]
+#Type=Application
+#Exec=/tool/keymap
+#X-GNOME-Autostart-enabled=false
+#NoDisplay=false
+#Hidden=false
+#Name[en_US]=keymap
+#Comment[en_US]=
+#X-GNOME-Autostart-Delay=2
+
+#content end
+
