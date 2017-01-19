@@ -1,1 +1,33 @@
-keyTweak in windows
+#!/bin/bash
+
+### BEGIN INIT INFO
+# Provides:         keymap
+# Required-Start:    $all
+# Required-Stop:     $all
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: change default key map
+# Description:    
+### END INIT INFO
+
+#remove caps
+xmodmap -e "remove lock = Caps_Lock"
+
+#change caps to control
+xmodmap -e "keycode 66 = Control_L Control_L "
+
+
+xmodmap -e "add control = Control_L"
+
+xmodmap -e "keycode 49 = Escape"
+
+xmodmap -e "keycode 9 = grave"
+
+
+
+xmodmap -e "keycode 22 = backslash bar"
+
+xmodmap -e "keycode 51=BackSpace"
+
+xmodmap -e "keycode 62 = F5"
+#keyTweak in windows
