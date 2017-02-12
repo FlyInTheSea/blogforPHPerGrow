@@ -1,0 +1,4 @@
+possible solution
+sudo add-apt-repository ppa:gwendal-lebihan-dev/cinnamon-nightly
+sudo apt-get update
+sudo apt-get install cinnamon
