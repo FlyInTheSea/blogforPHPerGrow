@@ -1,0 +1,12 @@
+
+
+$a = 1; 
+$b = 2; 
+$shit = function (...$param) use($a, &$b) :int{
+
+    $a = $a + $b;
+    $b = $a++;
+    return  array_sum($param);
+};
+
+printf("sum is %d , \$a is %d \$b is %d",$shit(1,2,3,4),$a,$b);//sum is 10 , $a is 1 $b is 3
