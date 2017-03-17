@@ -35,3 +35,29 @@ PS: The INT(1) and INT(32) data types indicates another misunderstanding about M
 INT is always 4 bytes, and it always allows values from -2147483648 to 2147483647.
 The numeric argument is about padding values during display
 which has no effect unless you use the ZEROFILL option.
+
+
+
+a) 存储限制
+
+varchar 字段是将实际内容单独存储在聚簇索引之外，内容开头用1到2个字节表示实际长度（长度超过255时需要2个字节），因此最大长度不能超过65535。
+
+b) 编码长度限制
+
+字符类型若为gbk，每个字符最多占2个字节，最大长度不能超过32766;
+
+字符类型若为utf8，每个字符最多占3个字节，最大长度不能超过21845。
+
+若定义的时候超过上述限制，则varchar字段会被强行转为text类型，并产生warning。
+
+c) 行长度限制
+
+导致实际应用中varchar长度限制的是一个行定义的长度。 MySQL要求一个行的定义长度不能超过65535。若定义的表长度超过这个值，则提示
+
+ERROR 1118 (42000): Row size too large. The maximum row size for the used table type, not counting BLOBs, is 65535. You have to change some columns to TEXT or BLOBs。
+
+
+
+
+
+
