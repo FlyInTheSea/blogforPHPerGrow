@@ -1,9 +1,34 @@
 
 
+
+
+Because your primary key is a multi-column primary key on both UTF8 VARCHAR(255) columns, the index size is the size of both columns, added together.
+
+Indexes on UTF8 columns automatically allocate all possible space, where each character could take up to 3 bytes. Therefore, your index size is 255 characters * 3 bytes * 2 columns = 1530 bytes.
+
+MyISAM has a limit of 1000 bytes for indexes. InnoDB has an even smaller limit (767 bytes) unless you're on MySQL 5.7.7+, in which case the limit is 3072 bytes by default.
+
+Try to reduce your index size. Typically, the smaller your index size, the better your seek performance will be.
+
+
+
+
+
+
 link to http://stackoverflow.com/questions/8746207/1071-specified-key-was-too-long-max-key-length-is-1000-bytes
 
+SELECT
+ ROUND(SUM(LENGTH(`menu_link`)<10)*100/COUNT(*),2) AS pct_length_10,
+ ROUND(SUM(LENGTH(`menu_link`)<20)*100/COUNT(*),2) AS pct_length_20,
+ ROUND(SUM(LENGTH(`menu_link`)<50)*100/COUNT(*),2) AS pct_length_50,
+ ROUND(SUM(LENGTH(`menu_link`)<100)*100/COUNT(*),2) AS pct_length_100
+FROM `pds_core_menu_items`;
 
-
++---------------+---------------+---------------+----------------+
+| pct_length_10 | pct_length_20 | pct_length_50 | pct_length_100 |
++---------------+---------------+---------------+----------------+
+|         21.78 |         80.20 |        100.00 |         100.00 |
++---------------+---------------+---------------+----------------+
 
 PS: The INT(1) and INT(32) data types indicates another misunderstanding about MySQL
  The numeric argument has no effect related to storage or the range of values allowed for the column
