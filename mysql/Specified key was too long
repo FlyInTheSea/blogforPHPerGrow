@@ -1,0 +1,12 @@
+
+
+link to http://stackoverflow.com/questions/8746207/1071-specified-key-was-too-long-max-key-length-is-1000-bytes
+
+
+
+
+PS: The INT(1) and INT(32) data types indicates another misunderstanding about MySQL
+ The numeric argument has no effect related to storage or the range of values allowed for the column
+INT is always 4 bytes, and it always allows values from -2147483648 to 2147483647.
+The numeric argument is about padding values during display
+which has no effect unless you use the ZEROFILL option.
