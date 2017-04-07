@@ -1,0 +1,14 @@
+alias test_server_connect_transport='function _anonymous(){   echo $(pwd)/$1 }; _anonymous'
+alias test_server_connect_transport="function _anonymous(){   echo $(pwd); echo $1; }; _anonymous"
+
+example test_server_connect_transport aa
+first will work correctly output /home/wwwroot/aa
+
+
+
+
+
+
+
+
+
