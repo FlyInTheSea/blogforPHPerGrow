@@ -1,0 +1,10 @@
+SELECT id
+      ,descr AS `Category`
+      ,CASE parent_id 
+         WHEN 164 THEN 'Advertisemnt'
+         WHEN 167 THEN 'Modeling'
+         WHEN 154 THEN 'Finance'
+         ELSE          'Unknown partent_id'
+       END AS `Department`
+    
+FROM  category
