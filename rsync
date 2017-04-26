@@ -1,7 +1,7 @@
 
 
-
-
+sudo vim /etc/default/rsync  
+RSYNC_ENABLE=true   #false改true  
 
 
 rsync -vzatopg --progress  zhu@192.168.112.188::zz  local_path
