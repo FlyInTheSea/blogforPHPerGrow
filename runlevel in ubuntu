@@ -1,0 +1,16 @@
+* 0 System Halt
+* 1 Single user
+* 2 Full multi-user mode (Default)
+* 3-5 Same as 2
+* 6 System Reboot
+
+
+
+
+
+
+
+
+
+
+
