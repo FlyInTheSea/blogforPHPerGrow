@@ -1,0 +1,22 @@
+
+
+
+
+
+
+rsync -vzatopg --progress  zhu@192.168.112.188::zz  local_path
+
+rsync -auvzP--bwlimit=100 本地的文件 远程的文件
+
+
+locale
+rsync -a dir1/ dir2
+
+The -a option is a combination flag.
+
+It stands for "archive" and syncs recursively
+and preserves symbolic links, special and device files, modification times, group, owner, and permissions.
+
+
+
+
