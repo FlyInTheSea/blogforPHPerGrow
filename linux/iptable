@@ -12,8 +12,49 @@ iptables -P INPUT DROP
 iptables -P FORWARD DROP
 iptables -P OUTPUT DROP
 
+  下面两条策略会使iptables允许由服务器本身请求的数据通过。
+iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT  
+iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT 
+
+
 
 区分大小写
+
+
+
+
+#add
+
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+
+#delete 
+
+#查看number
+iptables -L --line-numbers
+
+iptables -D INPUT 1 
+
+#delete all
+iptables -F 
+
+
+
+#like mysql show create table  XXXX
+iptables -S 
+
+
+
+
+
+
+
+iptables -A INPUT -p tcp --destination-port 22 -m iprange --src-range 192.168.1.100-192.168.1.200 -j ACCEPT  
+
+
+iptables -A INPUT -p tcp -s 0/0 --sport 513:65535 -d 195.55.55.78 --dport 22 -m state --state NEW,ESTABLISHED -j DROP
+
+iptables -t nat -A POSTROUTING -j SNAT --to-source 192.168.1.100:2000-3000
+iptables -t nat -A POSTROUTING -j SNAT --to-source 192.168.1.100-192.168.1.200
 
 
 
