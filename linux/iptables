@@ -37,6 +37,17 @@ iptables -D INPUT 1
 #delete all
 iptables -F 
 
+# save to reboot
+
+iptables-save > /etc/iptables.roles
+ vim /etc/network/interfaces
+ add 
+pre-up iptables-restore < /etc/iptables.roles
+
+
+
+
+
 
 
 #like mysql show create table  XXXX
