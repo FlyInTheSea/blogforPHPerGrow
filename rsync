@@ -18,5 +18,5 @@ It stands for "archive" and syncs recursively
 and preserves symbolic links, special and device files, modification times, group, owner, and permissions.
 
 
-
-
+windows
+rsync.exe  -av  --progress  ssh.exe  zhu@47.93.29.6::win_m
