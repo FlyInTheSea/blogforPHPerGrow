@@ -20,4 +20,12 @@ and preserves symbolic links, special and device files, modification times, grou
 
 windows
 rsync.exe  -av  --progress  ssh.exe  zhu@47.93.29.6::win_m
+
 C:\Users\Administrator\Desktop\cwRsync_5.5.0_x86_Free\bin\rsync.exe --delete  -av  --progress   zhu@47.93.29.6::win_m/ Html/
+
+
+
+C:\Users\Administrator\Desktop\cwRsync_5.5.0_x86_Free\bin\rsync.exe 
+--exclude-from '/home/backup/exclude.txt'
+--exclude 'scmnew/App/Runtime'  -av  --progress scmnew  zhu@47.93.29.6::mobile 
+
