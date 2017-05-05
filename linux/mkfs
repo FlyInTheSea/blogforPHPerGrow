@@ -1,0 +1,11 @@
+fdisk -l    list partition table(s)
+
+
+mkfs.ext4 /dev/sdb
+
+
+
+
+
+
+
