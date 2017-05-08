@@ -1,0 +1,1 @@
+Redis的确没有账号的概念，连接Redis server只需要Host和Port。
