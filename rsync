@@ -26,6 +26,6 @@ C:\Users\Administrator\Desktop\cwRsync_5.5.0_x86_Free\bin\rsync.exe --delete  -a
 
 
 C:\Users\Administrator\Desktop\cwRsync_5.5.0_x86_Free\bin\rsync.exe 
---exclude-from '/home/backup/exclude.txt'
+--exclude-from='/home/backup/exclude.txt'
 --exclude 'scmnew/App/Runtime'  -av  --progress scmnew  zhu@47.93.29.6::mobile 
 
