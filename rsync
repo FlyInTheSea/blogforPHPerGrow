@@ -29,3 +29,15 @@ C:\Users\Administrator\Desktop\cwRsync_5.5.0_x86_Free\bin\rsync.exe
 --exclude-from='/home/backup/exclude.txt'
 --exclude 'scmnew/App/Runtime'  -av  --progress scmnew  zhu@47.93.29.6::mobile 
 
+rsync -av --progress --exclude-from=./exclude.txt    zhu@47.93.29.6::pc_root ./
+360
+h5
+web_manage
+sc_sitemap_list
+scpublic
+3d
+canvas
+canvasH5
+Public
+zhuanti
+0
