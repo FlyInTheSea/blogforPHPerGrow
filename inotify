@@ -1,0 +1,1 @@
+inotifywait -mrq -e create hd/ | while read file ; do filename=$(echo $file | awk '{print $3}' ) ;     rsync -rDz -e ssh /home/wwwroot/www.sc.cc/Public/Uploads/hd/  root@59.110.238.128::notify/hd/  ; done &
