@@ -1,0 +1,9 @@
+ln -s source des
+
+ln -s /usr/local/redis/bin/redis-server /usr/bin/redis-server
+
+删除软链接之后　源文件也会被删除
+
+ln 要写全部路径
+
+
