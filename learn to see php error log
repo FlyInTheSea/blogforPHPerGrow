@@ -3,3 +3,8 @@ i have to see the error log
 if you set 
 error_log = php_errors.log
 it will exists in www.xx.com/php_errors.log
+
+
+
+deal with 3M image exhausted 128M memory 
+amazing
