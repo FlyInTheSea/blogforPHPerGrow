@@ -1,0 +1,5 @@
+laravel didn't give me the right prompt
+i have to see the error log  
+if you set 
+error_log = php_errors.log
+it will exists in www.xx.com/php_errors.log
