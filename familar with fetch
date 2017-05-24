@@ -1,0 +1,17 @@
+
+跨域问题
+
+set  header("Access-Control-Allow-Origin: *"); in php file
+
+   fetch("https://www.sc.cc/api.php",{mode:"cors"}).then(function(res) {
+            // res instanceof Response == true.
+            if (res.ok) {
+                res.json().then(function(data) {
+                    console.info(data);
+                });
+            } else {
+                console.log("Looks like the response wasn't perfect, got status", res.status);
+            }
+        }, function(e) {
+            console.log("Fetch failed!", e);
+        });console.info("first");
