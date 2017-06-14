@@ -1,0 +1,27 @@
+针对谷歌、百度、搜搜、360搜索、宜搜、搜狗、必应等搜索引擎
+
+'baidu'=>'Baiduspider','360'=>'360Spider',
+'google'=>'Googlebot','soso'=>'Sosospider','sogou'=>
+'Sogou web spider','easou'=>'EasouSpider','bing'=>'bingbot');
+ 
+$path='/home/nginx/logs/'.date('Y/m/').(date('d')-1).'/access_www.txt';
+ 
+$s=$_GET['s'];
+ 
+if(!array_key_exists($s,$spiders)) die();
+$spider=$spiders[$s];
+ 
+$file=$s.'_'.date('ym').(date('d')-1).'.txt';
+if(!file_exists($file)){
+    $in=file_get_contents($path);
+    $pattern='/GET (.*) HTTP\/1.1" 404.*'.$spider.'/';
+    preg_match_all ( $pattern , $in , $matches );
+    $out='';
+    foreach($matches[1] as $k=>$v){
+        $out.=$domain.$v."\r\n";
+    }
+    file_put_contents($file,$out);
+}
+ 
+$url=$domain.'/silian/'.$file;
+echo $url;
