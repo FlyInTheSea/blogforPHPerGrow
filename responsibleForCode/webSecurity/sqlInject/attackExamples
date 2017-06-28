@@ -15,3 +15,14 @@ for sql3 $id = "id=-1 union select char(97),char(97),char(97)";
 
 more examples in
 https://phpdelusions.net/sql_injection
+
+
+
+2、不加单引号注入
+　　众所周知，整形的数据是不需要用引号引起来的，而字符串就要用引号，这样可以避免很多问题。但是如果仅仅用整形数据，我们是没有办法注入的，所以我需要把我们构造的语句转换成整形类型，这个就需要用到CHAR()，ASCII(),ORD(),CONV()这些函数了，举个简单的例子：
+SELECT * FROM user WHERE username='angel'
+　　如何使$username不带引号呢？很简单我们这样提交就可以了。
+SELECT * FROM user WHERE username=char(97,110,103,101,108)
+# char(97,110,103,101,108) 相当于angel，十进制。
+SELECT * FROM user WHERE username=0x616E67656C
+# 0x616E67656C 相当于angel，十六进制。
