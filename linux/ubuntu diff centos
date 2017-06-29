@@ -1,0 +1,9 @@
+ubuntu 
+
+cp a b 
+no matter if b exists  b will be overwrite
+
+centos 
+
+cp a b 
+if b exist will prompt you
