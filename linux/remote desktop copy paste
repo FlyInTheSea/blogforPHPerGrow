@@ -1,0 +1,26 @@
+So what do I do when clipboard stops working?
+
+Luckily fixing the issue is pretty straightforward and involves a few simple steps.
+
+Load up task manager (right click taskbar and select Task Manager)
+Go to the Processes Tab
+Select rdpclip.exe
+Click End Process
+Go to the Application Tab
+Click New Process
+Type rdpclip
+Click Ok
+
+It happens so often, this process is annoying! What do I do to fix it permanently?
+
+Unfortunately I don’t know why rdpclip stops working nor how to fix it permanently;
+however,there is a way to make it easier if it happens often.
+
+Create a new bat file and call it whatever you want say, clipboard.bat.
+Write the following two commands on separate lines in the new bat file
+Taskkill.exe /im rdpclip.exe
+Rdpclip.exe
+Save the bat file and drag it into the toolbar quick launch section
+Now whenever your copy and paste operation fails to restore it,
+all you need to do is click this new batch file which will kill rdpclip and restart it.
+Still a workaround but at least it’s a quick procedure
