@@ -32,3 +32,7 @@ if b exist will prompt you
 　　[root@devdb ~]# vi ~/.bashrc
 
 　　在alias cp='cp -i'前加上"#"注释掉这行，：wq!保存推出，然后重新登陆就可以了。
+
+默认cp命令是有别名(alias cp='cp -i')的,无法强制覆盖,即使你用 -f 参数也无法强制覆盖文件。
+可以使用\cp 执行cp命令时不走alias 
+\cp * -rf ../../test
