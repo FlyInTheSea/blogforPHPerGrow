@@ -1,3 +1,2 @@
-both are ok
+
 header("Access-Control-Allow-Origin: *");
-header("ALLOW-CONTROL-ALLOW-ORIGIN:*");
