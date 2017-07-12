@@ -1,4 +1,6 @@
-      if ($http_x_forwarded_proto = "http") {
+     work in aliyun proxy
+     
+     if ($http_x_forwarded_proto = "http") {
                  rewrite ^(.*)$  https://$host$1 permanent;
         }
 
