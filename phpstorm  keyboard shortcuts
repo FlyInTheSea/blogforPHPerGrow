@@ -1,0 +1,3 @@
+Ctrl+Alt+N 
+The Inline Variable refactoring replaces redundant variable usage with its last assigned value
+In order to invoke the refactoring, move the cursor over the local variable to apply the refactoring to
