@@ -1,0 +1,5 @@
+echo ' export HISTTIMEFORMAT="  %d %m %y %T  " ' >> ~/.bashrc
+
+centos /etc/profile
+
+ubuntu ~/.bash_history
