@@ -1,0 +1,1 @@
+awk '{print $1}' ref | sort | uniq -c | sort -nr -k1 | head -n 1000 > /home/wwwroot/www.sc.cc/most_search_words.txt
