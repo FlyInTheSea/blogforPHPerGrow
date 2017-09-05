@@ -1,0 +1,7 @@
+#!/bin/bash
+
+alias blah='function _blah(){ echo "First: $1"; echo "Second: $2"; };_blah'
+
+
+alias test_server_connect_transport='function _anonymous(){   echo $(pwd); echo $1; }; _anonymous'
+
