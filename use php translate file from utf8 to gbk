@@ -1,0 +1,10 @@
+
+$content = file_get_contents("/coustom/designer.csv");
+
+
+$result = iconv("utf-8","gbk",$content);
+
+
+file_put_contents("/coustom/a.csv",$result);
+
+                                   
