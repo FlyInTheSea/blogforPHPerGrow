@@ -1,0 +1,29 @@
+IN_SC
+
+
+alias test_server_connect="ssh root@103.16.124.78"
+alias test_server_connect_as_user_zhu="ssh zhu@103.16.124.78"
+
+#alias dinguo_win_server_connect="rdesktop -u  Administrator -p123456 -g1900x1050 192.168.115.65 -r clipboard:CLIPBOARD -r disk:MyDisk=/win_mount"
+#alias dinguo_win_server_connect="rdesktop -u  Administrator -p123456 -g1900x1050 192.168.115.65 -r clipboard:CLIPBOARD  "
+alias dinguo_win_server_connect="rdesktop -u  Administrator -p123456 -g1900x1000 192.168.115.65 -r clipboard:PRIMARYCLIPBOARD -r sound:local -r disk:MyDisk=/win_mount "
+alias dinguo_win_server_connect_full="rdesktop -u  Administrator -p123456 -f 192.168.115.65 -r clipboard:PRIMARYCLIPBOARD -r sound:local -r disk:MyDisk=/win_mount "
+
+alias web_server_connect="rdesktop -g1800x800 -a 16 -u  Administrator -p '195261@*&#lasy739f'  111.67.199.227:3999 -r clipboard:CLIPBOARD -r disk:MyDisk=/win_mount"
+
+
+alias test_server_connect_transport='function _anonymous(){   echo $pwd/$1; } _anonymous();'
+alias virtual_mint_connect="ssh root@192.168.112.103"
+alias virtual_MINT_connect="ssh root@192.168.112.40"
+
+alias web_server_b_connect="rdesktop -g1900x1050 -a 16 -u  administrator -p wangkun@@##$$pan82270522  111.206.163.85:3218 -r clipboard:CLIPBOARD -r disk:MyDisk=/win_mount"
+
+alias new-web-connect="ssh root@47.93.29.6 -p 23"
+
+alias get-new-web-ip="echo 47.93.29.6"
+
+alias new-img-connect="ssh root@59.110.238.128"
+
+alias new-test-connect="ssh root@59.110.214.155"
+
+alias get-proxy-ip="echo 59.110.86.143"
