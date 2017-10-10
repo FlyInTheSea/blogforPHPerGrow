@@ -1,0 +1,8 @@
+apt-get update
+echo y | apt-get install default-jre
+ 
+// apt-get install default-jdk
+
+
+echo JAVA_HOME="/usr/lib/jvm/java-8-oracle" >> /etc/environment
+source /etc/environment
