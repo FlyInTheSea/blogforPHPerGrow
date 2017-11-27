@@ -1,0 +1,10 @@
+fc-list :lang=z
+NSimSun,新宋体:style=Regular
+
+SimSun,宋体:style=Regular
+
+Efont Fixed Wide:style=Italic
+
+Efont Biwidth:style=Bold Italic
+
+SimHei,黑体:style=Regular
