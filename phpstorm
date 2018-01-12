@@ -1,0 +1,5 @@
+if ctrl+shift+o cannot find file that exists in your project 
+First of all: please try "File | Invalidate caches..." and restart IDE.
+
+Secondly: that popup window has filter icon -- click on it and make sure that ALL file types are checked (you can use "All" button for that)
+
