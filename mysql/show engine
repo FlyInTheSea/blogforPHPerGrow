@@ -1,0 +1,1 @@
+show table status from 数据库库名 where name='表名'
