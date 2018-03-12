@@ -1,0 +1,8 @@
+
+
+ how-do-i-enable-auto-login-in-mint-18   /etc/lightdm/lightdm.conf
+ autologin-guest=false
+autologin-user=zhu
+autologin-user-timeout=0
+allow-guest=false
+ 
