@@ -1,0 +1,6 @@
+$im = new imagick('file.pdf[0]');
+$im->setImageFormat('jpg');
+header('Content-Type: image/jpeg');
+echo $im;
+
+The [0] means page 1.
