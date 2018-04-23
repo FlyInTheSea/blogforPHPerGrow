@@ -1,0 +1,3 @@
+
+mysqldump -uroot -psunjiawen520 --opt biz_regpara | 
+mysql -h 192.168.200.252 --port 3307 -u php_biz -pTwoosympoidgolferv@Of0  biz_regpara
