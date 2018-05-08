@@ -1,0 +1,12 @@
+How To Save A File In Vim / Vi Without Root Permission With sudo
+
+
+refer to https://www.cyberciti.biz/faq/vim-vi-text-editor-save-file-without-root-permission/
+
+
+
+Open/Edit ~/.vimrc file and append the following code:
+
+command W :execute ':silent w !sudo tee % > /dev/null' | :edit!
+
+
