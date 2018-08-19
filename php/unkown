@@ -1,0 +1,5 @@
+fastcgi_finish_request   Flushes all response data to the client
+
+常量 PHP_BINDIR 给出了php可执行文件所在的目录  
+
+cli 模式下 $_SERVER['_']  同 PHP_BINDIR
