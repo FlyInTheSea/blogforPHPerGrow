@@ -1,0 +1,7 @@
+
+get_attribute()
+
+set_attribute()
+
+这两个函数 可以减少 attribute 的拼写错误
+
