@@ -1,3 +1,12 @@
 
-mysqldump -uroot -psunjiawen520 --opt biz_regpara | 
+mysqldump -uroot -psunjiawen520 --opt biz_regpara  --lock-tables=false
+--ignore-table=database.table1 | 
 mysql -h 192.168.200.252 --port 3307 -u php_biz -pTwoosympoidgolferv@Of0  biz_regpara
+
+
+
+
+--skip-add-locks  ??? 
+--lock-tables  ???
+--skip-lock-tables ??
+ --skip-opt
