@@ -13,3 +13,13 @@ public function boot()
 }
 
 refer https://laravel-news.com/laravel-5-4-key-too-long-error
+
+
+
+ $request->header('token')  会获取到　　token 和　Token
+
+ 同样的　$request->header('Token')  也会获取到　　token 和　Token
+
+ 即不区分大小写　
+
+ 因为是laravel 内部做的处理

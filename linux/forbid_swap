@@ -1,0 +1,5 @@
+swapoff -a
+
+关闭　swap 内存　如果想要永久关闭
+
+放弃　直接丢到　/etc/profile  就好了
