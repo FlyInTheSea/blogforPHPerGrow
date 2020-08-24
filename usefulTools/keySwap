@@ -1,5 +1,6 @@
 #!/bin/bash
 
+xmodmap -e "keycode 117 = Control_L"
 xmodmap -e "remove control = Control_L"
 #remove caps
 xmodmap -e "remove lock = Caps_Lock"
@@ -19,9 +20,22 @@ xmodmap -e "keycode 9 = grave"
 
 xmodmap -e "keycode 22 = backslash bar"
 
-xmodmap -e "keycode 51=BackSpace"
+#xmodmap -e "keycode 36 = BackSpace"
+#xmodmap -e "keycode 51 = Return" 
+xmodmap -e "keycode 36 = Return"
+xmodmap -e "keycode 51 = BackSpace" 
 
-xmodmap -e "keycode 62 = F5"
+xmodmap -e "keycode 108=Menu"
+xmodmap -e "keycode 62 = Down"
+xmodmap -e "keycode 102 = space" 
+#xmodmap -e "keycode 114 = F5"
+#----
+
+
+
+#xmodmap -e "keycode 105 = Right"
+#右侧ctrl
+#xmodmap -e "keycode 66=Right"
 
 
 
@@ -49,4 +63,3 @@ xmodmap -e "add lock = Caps_Lock"
 #X-GNOME-Autostart-Delay=2
 
 #content end
-
